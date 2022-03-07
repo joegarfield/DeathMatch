@@ -30,7 +30,9 @@ public class PlayerTNTPlaceEvent implements Listener {
                 location.setX(location.getX() + 0.5);
                 location.setY(location.getY() + 0.5);
                 location.setZ(location.getZ() + 0.5);
-                e.getBlock().getWorld().spawn(location, TNTPrimed.class);
+
+                TNTPrimed tnt = e.getBlock().getWorld().spawn(location, TNTPrimed.class);
+                tnt.setFuseTicks(40);
             }
         }
     }
