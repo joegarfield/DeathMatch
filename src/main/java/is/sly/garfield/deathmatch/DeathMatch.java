@@ -77,6 +77,7 @@ public final class DeathMatch extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new PlayerBrewingStandInteractListener(this), this);
         Bukkit.getPluginManager().registerEvents(new PlayerEnchantmentTableInteractListener(this), this);
         Bukkit.getPluginManager().registerEvents(new PlayerShopInventoryClickListener(this), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerTNTPlaceEvent(this), this);
 
         this.lobbyLocation = new Location(Bukkit.getWorld(getConfig().getString("lobby.world")), getConfig().getDouble("lobby.spawn.x"), getConfig().getDouble("lobby.spawn.y"), getConfig().getDouble("lobby.spawn.z"));
 
