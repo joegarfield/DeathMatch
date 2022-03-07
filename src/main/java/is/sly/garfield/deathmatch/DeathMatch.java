@@ -278,18 +278,21 @@ public final class DeathMatch extends JavaPlugin {
         p.setFoodLevel(20);
 
 
-        Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+        Bukkit.getScheduler().runTaskLaterAsynchronously(this, () -> {
+            p.getInventory().clear();
             // Have to make a Deep Copy because ItemStacks change while in-game.
             p.getInventory().setContents(ItemStackUtils.itemStackDeepCopy(playerProfile.getMainInventory()));
             p.getInventory().setArmorContents(ItemStackUtils.itemStackDeepCopy(playerProfile.getArmorSlots()));
             p.updateInventory();
-        });
+        }, 5L);
 
         for (PotionEffect effect : p.getActivePotionEffects()) {
             p.removePotionEffect(effect.getType());
         }
 
-        p.teleport(getLobbyLocation());
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            p.teleport(getLobbyLocation());
+        }, 5L);
         getDeathMatchScoreboard().setScoreBoard(p);
     }
 
