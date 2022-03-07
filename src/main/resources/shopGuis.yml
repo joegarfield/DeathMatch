@@ -1,0 +1,513 @@
+chests:
+  armor:
+    chest_name: "Armor"
+    layout:
+      - CHAINMAIL_HELMET
+      - CHAINMAIL_CHESTPLATE
+      - CHAINMAIL_LEGGINGS
+      - CHAINMAIL_BOOTS
+      - AIR
+      - CHAINMAIL_HELMET
+      - CHAINMAIL_CHESTPLATE
+      - CHAINMAIL_LEGGINGS
+      - CHAINMAIL_BOOTS
+      - IRON_HELMET
+      - IRON_CHESTPLATE
+      - IRON_LEGGINGS
+      - IRON_BOOTS
+      - AIR
+      - IRON_HELMET
+      - IRON_CHESTPLATE
+      - IRON_LEGGINGS
+      - IRON_BOOTS
+      - DIAMOND_HELMET
+      - DIAMOND_CHESTPLATE
+      - DIAMOND_LEGGINGS
+      - DIAMOND_BOOTS
+      - AIR
+      - DIAMOND_HELMET
+      - DIAMOND_CHESTPLATE
+      - DIAMOND_LEGGINGS
+      - DIAMOND_BOOTS
+    x: 31
+    y: 59
+    z: 2
+    world: "DeathMatchLobby"
+  weapons:
+    chest_name: "Weapons"
+    layout:
+      - IRON_SWORD
+      - DIAMOND_SWORD
+      - IRON_SWORD
+      - DIAMOND_SWORD
+      - AIR
+      - IRON_AXE
+      - DIAMOND_AXE
+      - IRON_AXE
+      - DIAMOND_AXE
+      - IRON_SWORD
+      - IRON_SWORD
+      - IRON_SWORD
+      - IRON_SWORD
+      - AIR
+      - IRON_AXE
+      - IRON_AXE
+      - IRON_AXE
+      - IRON_AXE
+      - DIAMOND_SWORD
+      - DIAMOND_SWORD
+      - DIAMOND_SWORD
+      - DIAMOND_SWORD
+      - AIR
+      - DIAMOND_AXE
+      - DIAMOND_AXE
+      - DIAMOND_AXE
+      - DIAMOND_AXE
+    x: 31
+    y: 60
+    z: 0
+    world: "DeathMatchLobby"
+  buckets:
+    chest_name: "Buckets"
+    layout:
+      - BUCKET
+      - BUCKET
+      - MILK_BUCKET
+      - MILK_BUCKET
+      - AIR
+      - WATER_BUCKET
+      - WATER_BUCKET
+      - LAVA_BUCKET
+      - LAVA_BUCKET
+      - BUCKET
+      - BUCKET
+      - MILK_BUCKET
+      - MILK_BUCKET
+      - AIR
+      - WATER_BUCKET
+      - WATER_BUCKET
+      - LAVA_BUCKET
+      - LAVA_BUCKET
+      - BUCKET
+      - BUCKET
+      - MILK_BUCKET
+      - MILK_BUCKET
+      - AIR
+      - WATER_BUCKET
+      - WATER_BUCKET
+      - LAVA_BUCKET
+      - LAVA_BUCKET
+    x: 32
+    y: 59
+    z: -2
+    world: "DeathMatchLobby"
+  bows_&_arrows:
+    chest_name: "Bows & Arrows"
+    layout:
+      - BOW
+      - BOW
+      - BOW
+      - BOW
+      - AIR
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+      - BOW
+      - BOW
+      - BOW
+      - BOW
+      - AIR
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+      - BOW
+      - BOW
+      - BOW
+      - BOW
+      - AIR
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+      - ARROW:16
+    x: 34
+    y: 62
+    z: -2
+    world: "DeathMatchLobby"
+  food_stuffs:
+    chest_name: "Food Stuffs"
+    layout:
+      - MELON:8
+      - MELON:8
+      - BREAD:4
+      - BREAD:4
+      - AIR
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - MELON:8
+      - MELON:8
+      - BREAD:4
+      - BREAD:4
+      - AIR
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - MELON:8
+      - MELON:8
+      - BREAD:4
+      - BREAD:4
+      - AIR
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+      - COOKED_BEEF:2
+    x: 33
+    y: 61
+    z: 3
+    world: "DeathMatchLobby"
+  misc:
+    chest_name: "Misc"
+    layout:
+      - FLINT_AND_STEEL
+      - FLINT_AND_STEEL
+      - TNT:4
+      - TNT:4
+      - AIR
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - FLINT_AND_STEEL
+      - FLINT_AND_STEEL
+      - TNT:4
+      - TNT:4
+      - AIR
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - FLINT_AND_STEEL
+      - FLINT_AND_STEEL
+      - TNT:4
+      - TNT:4
+      - AIR
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+      - ENDER_PEARL:4
+    x: 35
+    y: 60
+    z: 1
+    world: "DeathMatchLobby"
+  return_items:
+    chest_name: "Return Items"
+    layout: [ ]
+    x: 28
+    y: 59
+    z: -3
+    world: "DeathMatchLobby"
+
+# potion format: TYPE:IS_EXTENDED:IS_UPGRADED:IS_SPLASH
+brewing_stands:
+  weakness:
+    layout:
+      - WEAKNESS:false:false:true
+      - WEAKNESS:true:false:true
+      - WEAKNESS:false:false:true
+      - WEAKNESS:false:false:true
+      - WEAKNESS:true:false:true
+      - WEAKNESS:false:false:true
+      - WEAKNESS:false:false:true
+      - WEAKNESS:true:false:true
+      - WEAKNESS:false:false:true
+    x: -28
+    y: 59
+    z: -5
+    world: "DeathMatchLobby"
+  fire_resistance:
+    layout:
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:true:false:false
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:true:false:false
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:false:false:false
+      - FIRE_RESISTANCE:true:false:false
+    x: -28
+    y: 59
+    z: 5
+    world: "DeathMatchLobby"
+  swiftness:
+    layout:
+      - SPEED:false:false:false
+      - SPEED:true:false:false
+      - SPEED:false:true:false
+      - SPEED:false:false:false
+      - SPEED:true:false:false
+      - SPEED:false:true:false
+      - SPEED:false:false:false
+      - SPEED:true:false:false
+      - SPEED:false:true:false
+    x: -27
+    y: 59
+    z: 7
+    world: "DeathMatchLobby"
+  instant_health:
+    layout:
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+      - INSTANT_HEAL:false:false:false
+    x: -35
+    y: 61
+    z: 0
+    world: "DeathMatchLobby"
+  regeneration:
+    layout:
+      - REGEN:false:false:false
+      - REGEN:true:false:false
+      - REGEN:false:true:false
+      - REGEN:false:false:false
+      - REGEN:true:false:false
+      - REGEN:false:true:false
+      - REGEN:false:false:false
+      - REGEN:true:false:false
+      - REGEN:false:true:false
+    x: -33
+    y: 60
+    z: 2
+    world: "DeathMatchLobby"
+  poison:
+    layout:
+      - POISON:false:false:true
+      - POISON:true:false:true
+      - POISON:false:true:true
+      - POISON:false:false:true
+      - POISON:true:false:true
+      - POISON:false:true:true
+      - POISON:false:false:true
+      - POISON:true:false:true
+      - POISON:false:true:true
+    x: -27
+    y: 59
+    z: -7
+    world: "DeathMatchLobby"
+  strength:
+    layout:
+      - STRENGTH:false:false:false
+      - STRENGTH:false:false:false
+      - STRENGTH:true:false:false
+      - STRENGTH:false:false:false
+      - STRENGTH:false:false:false
+      - STRENGTH:true:false:false
+      - STRENGTH:false:false:false
+      - STRENGTH:false:false:false
+      - STRENGTH:true:false:false
+    x: -32
+    y: 61
+    z: -3
+    world: "DeathMatchLobby"
+  slowness:
+    layout:
+      - SLOWNESS:false:false:true
+      - SLOWNESS:true:false:true
+      - SLOWNESS:false:false:true
+      - SLOWNESS:false:false:true
+      - SLOWNESS:true:false:true
+      - SLOWNESS:false:false:true
+      - SLOWNESS:false:false:true
+      - SLOWNESS:true:false:true
+      - SLOWNESS:false:false:true
+    x: -25
+    y: 59
+    z: 4
+    world: "DeathMatchLobby"
+  instant_damage:
+    layout:
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:true:true
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:true:true
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:false:true
+      - INSTANT_DAMAGE:false:true:true
+    x: -25
+    y: 59
+    z: -4
+    world: "DeathMatchLobby"
+enchantment_table:
+  x: -31
+  y: 59
+  z: 0
+  world: "DeathMatchLobby"
+  types:
+    AXE:
+      1:
+        enchants:
+          - DAMAGE_ALL:3
+        price: 20
+      2:
+        enchants:
+          - DAMAGE_ALL:3
+          - FIRE_ASPECT:2
+        price: 30
+      3:
+        enchants:
+          - DAMAGE_ALL:3
+          - KNOCKBACK:2
+        price: 30
+      4:
+        enchants:
+          - DAMAGE_ALL:2
+          - FIRE_ASPECT:1
+          - KNOCKBACK:1
+        price: 30
+      5: [ ]
+      6:
+        enchants:
+          - DAMAGE_ALL:4
+        price: 40
+      7:
+        enchants:
+          - DAMAGE_ALL:4
+          - FIRE_ASPECT:2
+        price: 60
+      8:
+        enchants:
+          - DAMAGE_ALL:4
+          - KNOCKBACK:2
+        price: 60
+      9:
+        enchants:
+          - DAMAGE_ALL:4
+          - FIRE_ASPECT:2
+          - KNOCKBACK:2
+        price: 80
+    SWORD:
+      1:
+        enchants:
+          - DAMAGE_ALL:1
+        price: 0
+      2:
+        enchants:
+          - DAMAGE_ALL:1
+          - FIRE_ASPECT:1
+        price: 0
+      3:
+        enchants:
+          - DAMAGE_ALL:1
+          - KNOCKBACK:1
+        price: 0
+      4:
+        enchants:
+          - FIRE_ASPECT:1
+          - KNOCKBACK:1
+        price: 0
+      5: [ ]
+      6:
+        enchants:
+          - DAMAGE_ALL:3
+        price: 20
+      7:
+        enchants:
+          - DAMAGE_ALL:3
+          - FIRE_ASPECT:2
+        price: 30
+      8:
+        enchants:
+          - DAMAGE_ALL:3
+          - KNOCKBACK:2
+        price: 30
+      9:
+        enchants:
+          - DAMAGE_ALL:2
+          - FIRE_ASPECT:2
+          - KNOCKBACK:2
+        price: 30
+    BOW:
+      1:
+        enchants:
+          - ARROW_DAMAGE:2
+        price: 20
+      2:
+        enchants:
+          - ARROW_FIRE:1
+        price: 10
+      3:
+        enchants:
+          - ARROW_DAMAGE:2
+          - ARROW_FIRE:1
+        price: 30
+      4:
+        enchants:
+          - ARROW_DAMAGE:2
+          - ARROW_KNOCKBACK:1
+        price: 30
+      5: [ ]
+      6:
+        enchants:
+          - ARROW_DAMAGE:1
+          - ARROW_KNOCKBACK:1
+          - ARROW_FIRE:1
+        price: 30
+      7:
+        enchants:
+          - ARROW_DAMAGE:4
+        price: 30
+      8:
+        enchants:
+          - ARROW_DAMAGE:4
+          - ARROW_FIRE:1
+        price: 40
+      9:
+        enchants:
+          - ARROW_DAMAGE:4
+          - ARROW_KNOCKBACK:1
+        price: 40
+    ARMOR:
+      1:
+        enchants:
+          - PROTECTION_ENVIRONMENTAL:1
+        price: 10
+      2:
+        enchants:
+          - PROTECTION_ENVIRONMENTAL:2
+        price: 20
+      3:
+        enchants:
+          - PROTECTION_ENVIRONMENTAL:3
+        price: 30
+      4:
+        enchants:
+          - PROTECTION_ENVIRONMENTAL:4
+        price: 40
+      5: [ ]
+      6:
+        enchants:
+          - PROTECTION_PROJECTILE:1
+        price: 5
+      7:
+        enchants:
+          - PROTECTION_PROJECTILE:2
+        price: 10
+      8:
+        enchants:
+          - PROTECTION_FIRE:1
+        price: 5
+      9:
+        enchants:
+          - PROTECTION_FIRE:2
+        price: 10

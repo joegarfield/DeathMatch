@@ -1,0 +1,3 @@
+name: DeathMatch
+version: '${project.version}'
+main: is.sly.garfield.deathmatch.DeathMatch

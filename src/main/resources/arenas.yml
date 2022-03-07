@@ -1,0 +1,15 @@
+arenas:
+  big_tree:
+    name: "Big Tree"
+    world: "big_tree"
+    spawn:
+      x: 0.5
+      y: 61.0
+      z: 0.5
+  ice_biome:
+    name: "IceBiome"
+    world: "IceBiome"
+    spawn:
+      x: 0.5
+      y: 61.0
+      z: 0.5
