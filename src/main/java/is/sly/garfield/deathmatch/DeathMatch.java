@@ -401,6 +401,7 @@ public final class DeathMatch extends JavaPlugin {
         try {
             for (Player p : Bukkit.getOnlinePlayers()) {
                 if (p.getWorld().getName().equalsIgnoreCase(worldName)) {
+                    p.teleport(getLobbyLocation());
                     playerBackToSpawn(p);
                 }
             }

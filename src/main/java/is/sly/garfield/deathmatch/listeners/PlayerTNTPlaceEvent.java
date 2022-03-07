@@ -16,6 +16,11 @@ public class PlayerTNTPlaceEvent implements Listener {
         this.deathMatch = deathMatch;
     }
 
+    /**
+     * Event handler that replaces a TNT block with a primed TNT entity.
+     *
+     * @param e - the event to listen to, BlockPlaceEvent
+     */
     @EventHandler
     public void onTNTPlace(BlockPlaceEvent e) {
         if (!e.getPlayer().getLocation().equals(deathMatch.getLobbyLocation())) {

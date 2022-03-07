@@ -139,13 +139,15 @@ public class PlayerShopInventoryClickListener implements Listener {
                 Bukkit.getScheduler().runTaskLaterAsynchronously(deathMatch, () ->
                 {
                     ((Player) e.getWhoClicked()).updateInventory();
-                    ItemStack[] deepCopyContents = ItemStackUtils.itemStackDeepCopy(e.getWhoClicked().getInventory().getContents());
-                    ItemStack[] deepCopyArmorContents = ItemStackUtils.itemStackDeepCopy(e.getWhoClicked().getInventory().getArmorContents());
+                    if (!ItemStackUtils.isItemStackArrayEmpty(e.getWhoClicked().getInventory().getContents()) && !ItemStackUtils.isItemStackArrayEmpty(e.getWhoClicked().getInventory().getArmorContents())) {
+                        ItemStack[] deepCopyContents = ItemStackUtils.itemStackDeepCopy(e.getWhoClicked().getInventory().getContents());
+                        ItemStack[] deepCopyArmorContents = ItemStackUtils.itemStackDeepCopy(e.getWhoClicked().getInventory().getArmorContents());
 
-                    playerProfile.setMainInventory(deepCopyContents);
-                    playerProfile.setArmorSlots(deepCopyArmorContents);
+                        playerProfile.setMainInventory(deepCopyContents);
+                        playerProfile.setArmorSlots(deepCopyArmorContents);
 
-                    deathMatch.savePlayerProfiles();
+                        deathMatch.savePlayerProfiles();
+                    }
                 }, 2L);
             }
         }

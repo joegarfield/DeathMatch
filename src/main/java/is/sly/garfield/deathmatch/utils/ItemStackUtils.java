@@ -1,5 +1,6 @@
 package is.sly.garfield.deathmatch.utils;
 
+import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 public class ItemStackUtils {
@@ -19,5 +20,20 @@ public class ItemStackUtils {
             }
         }
         return deepCopiedArray;
+    }
+
+    /**
+     * Checks whether an item stack array is empty.
+     *
+     * @param itemStacks the item stack to check whether it is empty or not
+     * @return true if item stack array is empty, false if not
+     */
+    public static boolean isItemStackArrayEmpty(ItemStack[] itemStacks) {
+        for (ItemStack item : itemStacks) {
+            if (item != null && item.getType() != Material.AIR) {
+                return false;
+            }
+        }
+        return true;
     }
 }
