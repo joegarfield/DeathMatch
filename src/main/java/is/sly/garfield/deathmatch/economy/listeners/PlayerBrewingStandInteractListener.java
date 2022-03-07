@@ -66,11 +66,13 @@ public class PlayerBrewingStandInteractListener implements Listener {
     }
 
     /**
-     * @param type
-     * @param extended
-     * @param upgraded
-     * @param splash
-     * @return
+     * Function that creates an ItemStack based on potion data.
+     *
+     * @param type the type of Potion to build.
+     * @param extended whether the potion is considered or not.
+     * @param upgraded whether the potion is considered upgraded or not.
+     * @param splash whether the potion is a splash or not.
+     * @return the ItemStack of the Potion
      */
     private ItemStack getPotionItemStack(PotionType type, boolean extended, boolean upgraded, boolean splash) {
         ItemStack potion = new ItemStack((splash ? Material.SPLASH_POTION : Material.POTION), 1);
