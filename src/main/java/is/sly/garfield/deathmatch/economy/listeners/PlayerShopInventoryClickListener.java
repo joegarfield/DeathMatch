@@ -54,6 +54,11 @@ public class PlayerShopInventoryClickListener implements Listener {
                 return;
             }
 
+            if (e.getAction() == InventoryAction.COLLECT_TO_CURSOR) {
+                e.setCancelled(true);
+                return;
+            }
+
             // Update player's money, in-case it was not deducted previously.
             PlayerProfile playerProfile = deathMatch.getPlayerProfiles().get(e.getWhoClicked().getUniqueId());
             playerProfile.setMoney(500 - deathMatch.getEconomyHandler().calculateInventoryValue((Player) e.getWhoClicked()));
@@ -151,16 +156,6 @@ public class PlayerShopInventoryClickListener implements Listener {
                 }, 2L);
             }
         }
-    }
-
-    /**
-     * Event handler that cancels inventory drag events due to them messing with the calculations for click events.
-     *
-     * @param e the event being listened to, InventoryDragEvent
-     */
-    @EventHandler
-    public void onInventoryDrag(InventoryDragEvent e) {
-        e.setCancelled(true);
     }
 
      /**

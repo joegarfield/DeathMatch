@@ -263,6 +263,10 @@ public final class DeathMatch extends JavaPlugin {
     public void playerBackToSpawn(Player p) {
         p.getInventory().clear();
 
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            p.teleport(getLobbyLocation());
+        }, 3L);
+
         if (!getPlayerProfiles().containsKey(p.getUniqueId())) {
             getPlayerProfiles().put(p.getUniqueId(), new PlayerProfile(p.getName(), p.getUniqueId(), 500, p.getInventory().getContents(), p.getInventory().getArmorContents()));
         }
@@ -285,15 +289,12 @@ public final class DeathMatch extends JavaPlugin {
             p.getInventory().setContents(ItemStackUtils.itemStackDeepCopy(playerProfile.getMainInventory()));
             p.getInventory().setArmorContents(ItemStackUtils.itemStackDeepCopy(playerProfile.getArmorSlots()));
             p.updateInventory();
-        }, 5L);
+        }, 10L);
 
         for (PotionEffect effect : p.getActivePotionEffects()) {
             p.removePotionEffect(effect.getType());
         }
 
-        Bukkit.getScheduler().runTaskLater(this, () -> {
-            p.teleport(getLobbyLocation());
-        }, 5L);
         getDeathMatchScoreboard().setScoreBoard(p);
     }
 
